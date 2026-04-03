@@ -6,24 +6,29 @@
 <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@2.1.1/dist/aframe-extras.min.js"></script>
     
   </head>
-    <body>
+  
     <a-scene>
       <a-sky color="black"></a-sky>
-    
+<a-scene fog="type: linear; color: #AAB; near: 0; far: 30;">
+
+
+</a-scene>
+
        <!-- Put this inside the <a-scene> -->
       <a-entity 
       ply-model="src:train.ply"
       rotation="-80 -90 -180"
-      position="0 4.1 -10" 
+      position="0 2 -5" 
+      scale="0.5 0.5 0.5"
       ></a-entity>
         
       <a-entity
         ply-model="src:AMPHoriusd.ply"
-        position="0 -35 -20"
+        position="0 -35 -30"
         rotation="-86 0 0"
         scale="3 3 3"
-    
-        ></a-entity>         
+></a-entity>         
+        
     </a-scene>
   </body>
 </html>
