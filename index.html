@@ -9,6 +9,8 @@
  <body>
     <a-scene>
       <a-sky color="black"></a-sky>
+      <a-light type="ambient" color="white" intensity="0.5"></a-light>
+      <a-light type="directional" color="white" position="1 1 1" intensity="1"></a-light>
 
 <a-entity ply-model="src:train.ply" 
 rotation="-72 -41 130"
@@ -22,6 +24,7 @@ dir: alternate;
 "></a-entity>
 <a-entity ply-model="src:AMPHoriusd.ply" 
 position="1 0 1"
+scale="10 10 10"
 ></a-entity>
 
 ></a-scene>  
