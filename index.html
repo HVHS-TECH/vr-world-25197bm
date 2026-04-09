@@ -21,13 +21,16 @@ to:0 0.5 -10;
 dur: 5000;
 loop: true;
 dir: alternate;
-
 "
 ></a-entity>
 <a-entity ply-model="src:heart.ply" 
 position="-1 -17 -19"
 scale="3 3 3"
 rotation="-80 0 90"
+geometry="primitive: sphere; radius: 1.5"
+          light="type: point; color: white; intensity: 2"
+          material="color: white; shader: flat; src: glow.jpg"
+          position="0 0 -5"
 ></a-entity>
 <a-entity ply-model="src:star1.ply"
 position="-32 7 -16"
@@ -49,10 +52,14 @@ scale="0.5 0.5 0.5"
 position="15 7 -20"
 rotation="180 -73 180"
 scale="0.5 0.5 "
-
+></a-entity>
+></a-entity>
+<a-entity ply-model="src:rock.ply"
+position="15 7 -20"
+rotation="180 -73 180"
+scale="0.5 0.5 "
 ></a-entity>
 
-></a-entity>
 
 ></a-scene>  
   </body>
